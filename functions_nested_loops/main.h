@@ -1,8 +1,10 @@
+#ifndef "main.h"
+#define "main.h"
 
 /**
-*File:main.h
-*Author:Pericles Adjovi
-*Desc:header file containing functions declaration
+*main - function prints text as output
+*
+*Return:return
 */
 
 void print_alphabet(void);
@@ -18,3 +20,5 @@ int print_sign(int n);
 int _abs(int);
 int add(int n, int m);
 int print_last_digit(int n);
+
+#endif 

@@ -1,21 +1,22 @@
-#include "main.h" 
+#include "main.h"
 /**
-*main - function prints text as output
+*File:main.h
 *
-*Return:return 0
+*Desc:header file containing functions declaration
 */
-int main(void)
+int main (void)
+
 {
-  char cool[10] = "_putchar";
+  char type[10] = "_putchar";
 
   int a;
 
   for (a = 0; a < 8; a++)
     {
-      _putchar(cool[a]);
-      
+    _putchar(type[a]); 
     }
-  _putchar(10); 
+   _putchar('\n'); 
+    
+    return (0); 
+}
   
-  return (0); 
-} 
