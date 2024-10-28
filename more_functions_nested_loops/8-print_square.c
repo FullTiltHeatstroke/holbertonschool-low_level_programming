@@ -7,8 +7,9 @@ void print_square(int size)
 
   for (row = 1; row <= size; row++)
     {
-      _putchar('\n');
       for (i = 1; i <= size; i++)
-	_putchar('#'); 	
-    }
-}
+	_putchar('#');
+      _putchar('\n'); 
+    } 
+} 
+
