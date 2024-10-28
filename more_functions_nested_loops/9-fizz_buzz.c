@@ -19,7 +19,7 @@ int num;
         }
         else
         {
-            printf("%d ", num); 
+            printf("%d", num); 
         }
     }
 return (0);
