@@ -3,15 +3,15 @@
 
 void print_diagonal(int n)
 {
-  int space = 0;
-  int height = 0; 
-  for (space = 0; space < n; space++)
+  int vert = 0;
+  int hor = 0; 
+  for (vert = 0; vert < n; vert++)
     {
-      for (height = 0; height < n; height++)
+      for (hor = 0; hor < n; hor++)
 	{
-	  if (space == height)
+	  if (vert == hor)
 	    _putchar('\\');
-	  else
+	  else if (vert > hor) 
 	    _putchar(' '); 
 
 	}
