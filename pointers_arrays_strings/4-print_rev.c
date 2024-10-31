@@ -1,10 +1,23 @@
 #include "main.h"
-#include <string.h>
+
+int _strlen(char *s)
+{
+
+  int length = 0;
+
+  while (s[length] != '\0')
+
+    {
+      length++; 
+    }
+  return (length); 
+
+}
 
 void print_rev(char *s)
 {
 
-  int last = strlen(s) - 1;
+  int last = _strlen(s) - 1;
 
   while (last >= 0)
     {
@@ -13,3 +26,4 @@ void print_rev(char *s)
     }
   _putchar('\n'); 
 }
+
