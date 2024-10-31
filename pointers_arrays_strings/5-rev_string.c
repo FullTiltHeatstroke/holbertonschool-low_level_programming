@@ -17,11 +17,11 @@ void rev_string(char *s)
 
   while (beg < last)
     {
-      hold = s[beg];
-      s[beg] = s[last];
-      s[last] = hold;
-      beg++;
-      last--; 
+      hold = s[beg]; //store starting character
+      s[beg] = s[last]; //the beginning and last will equal the same when beg < last
+      s[last] = hold; //last character is held, then the loop repeats and becomes the beginning. 
+      beg++; // moves towards the centre from the left. 
+      last--; // moves towards the centre from the right. 
       
     }
 }
