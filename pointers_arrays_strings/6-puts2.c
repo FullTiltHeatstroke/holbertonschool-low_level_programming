@@ -5,10 +5,18 @@
 void puts2(char *str)
 {
   int i = 0;
-  
-  for (i = 0; str[i] != '\0'; i += 2)
+  int count = 0;
+
+  while (str[count] != '\0')
     {
-    _putchar(str[i]); 
+      count++; 
     }
+  while (i < count)
+    {
+for (i = 0; str[i] != '\0'; i += 2)
+  {
+   _putchar(str[i]);
+  }
+  }
   _putchar('\n'); 
 }
