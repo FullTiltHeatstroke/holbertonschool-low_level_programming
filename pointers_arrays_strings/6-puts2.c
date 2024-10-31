@@ -4,17 +4,15 @@
 
 void puts2(char *str)
 {
-  int length = 0;
-  int num; 
+  int i = 0; 
 
-  while (str[length] != '\0')
+  while (str[i] != '\0')
     {
-      length++;
-      num = str[length] - '0';
+      i++;
 
-      if (num % 2 == 0)
+      if (i % 2 == 0)
 	{
-	  _putchar(str[length]); 
+	  _putchar(str[i]); 
 	}
       else
 	{
