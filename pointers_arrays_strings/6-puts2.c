@@ -4,20 +4,11 @@
 
 void puts2(char *str)
 {
-  int index = 0;
-  int length = 0;
-
-  while (str[length] != '\0')
+  int i = 0;
+  
+  for (i = 0; str[i] != '\0'; i += 2)
     {
-      length++;
-
-      while (index < length)
-	{
-	  index += 2; 
-	  _putchar(str[index]);
-	   
-	}
-     
+    _putchar(str[i]); 
     }
   _putchar('\n'); 
 }
