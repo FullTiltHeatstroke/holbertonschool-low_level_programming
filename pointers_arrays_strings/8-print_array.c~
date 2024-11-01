@@ -1,0 +1,17 @@
+#include "main.h"
+
+void print_array(int *a, int n)
+{
+
+  int count = 0;
+  int i;
+
+  while (a[count] != '\0')
+    {
+
+      count++ 
+
+    }
+
+
+}
