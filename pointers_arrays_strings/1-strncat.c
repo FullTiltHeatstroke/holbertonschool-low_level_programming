@@ -10,11 +10,12 @@ char *_strncat(char *dest, char *src, int n)
       countD++;
     }
 
-  while (src[countS] != '\0' && countD < n )
+  while (src[countS] != '\0' && countS < n )
     {
       dest[countD] = src[countS];
       countD++;
       countS++;
     }
+  dest[countD] = '\0'; 
     return (dest); 
     }
