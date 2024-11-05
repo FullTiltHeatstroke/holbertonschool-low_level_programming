@@ -22,7 +22,7 @@ char *cap_string(char *s)
 	    }
 	  countO++;
 	}
-      if (new_word && s[count] >= 'a' && s [count] <= 'z')
+      if (new_word && s[count] >= 'a' && s[count] <= 'z')
 	{
 	  s[count] -= ('a' - 'A'); 
 	}
