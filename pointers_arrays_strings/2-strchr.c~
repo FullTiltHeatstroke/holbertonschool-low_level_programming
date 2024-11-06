@@ -1,0 +1,21 @@
+#include "main.h"
+
+char *_strchr(char *s, char c)
+{
+  int count = 0;
+
+  while (s[count] != '\0')
+    {
+      if (s[count] == c)
+	{
+	  return (s);
+	}
+      else if (s[count] +1 == c)
+	{
+	  return (s[count] + 1); 
+		}     
+      count++; 
+    }
+  return (s+1 ); 
+  
+}
