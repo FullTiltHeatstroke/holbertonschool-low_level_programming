@@ -2,8 +2,7 @@
 #define DOG_H
 /**
  * creates a struct
- * 
- * 
+ *
  */
 struct dog
 {
