@@ -27,7 +27,7 @@ return (a * b);
 int op_div(int a, int b)
 {
 return (a / b);
-if (b == 0 || a == 0)
+if (b == 0)
   {
     printf("Error\n");
     exit(100); 
@@ -37,7 +37,7 @@ if (b == 0 || a == 0)
 int op_mod(int a, int b)
 {
 return (a % b);
-if (b == 0 || a == 0)
+if (b == 0)
   {
     printf("Error\n");
     exit (100); 
