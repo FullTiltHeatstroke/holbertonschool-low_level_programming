@@ -4,26 +4,27 @@
 #include <string.h>
 
 /**
- * 
- *
- * 
+ * main - simple math operations 
+ * @argc: argument count
+ * @argv: array of arguments
+ * Return: exits program. 
  */
 int main(int argc, char *argv[])
 {
-  int (*main_fun)(int, int);
+  int (*mainfun)(int, int);
 
   if (argc != 4)
     {
       printf("Error\n");
       exit(98); 
     }
-  main_fun = get_op_func(argv[2]);
-  if (main_func == NULL)
+  mainfun = get_op_func(argv[2]);
+  if (mainfun == NULL)
     {
       printf("Error\n");
       exit(99); 
     }
-  printf("%d\n", main_fun(atoi(argv[1]), atoi(argv[3]))); 
+  printf("%d\n", mainfun(atoi(argv[1]), atoi(argv[3]))); 
 
   return (0); 
 }
