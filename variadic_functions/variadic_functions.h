@@ -1,5 +1,5 @@
-#define VAR_FUN
 #ifndef VAR_FUN
+#define VAR_FUN
 
 int _putchar(char c); 
 int sum_them_all(const unsigned int n, ...);
