@@ -1,0 +1,20 @@
+#include "lists.h"
+#include <string.h>
+#include <stdlib.h>
+
+/**
+ * add_node - adds a new node to the start of a linked list
+ * @str: New node containing str
+ * @head: pointer to the pointer of the first node. 
+ * Return: A pointer to the newly added node. 
+ */
+list_t *add_node(list_t **head, const char *str)
+{
+
+  str->next = head;
+  head = str;
+  return (head); 
+
+
+
+}
